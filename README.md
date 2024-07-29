@@ -20,8 +20,9 @@ C++11标准的简易高性能webServer
 ## 构建
 * 使用CMake来build
 
-    cmake -S . -B build&&cmake --build build
-    可执行文件在 build目录下
+    cmake -S . -B build
+    make -j8 build&&make build install
+    可执行文件在bin目录下
 
 * 使用Makefile来build
     
@@ -34,6 +35,8 @@ C++11标准的简易高性能webServer
 	./web_server [-p port] [-t thread_numbers] [-f log_file_name] [-o open_log] 
     [-s log_to_stderr] [-c color_log_to_stderr] [-l min_log_level]
 
+    或者
+    ./run_server.sh
 
 ## 压力测试
 * 本项目对开源压测工具WebBench
