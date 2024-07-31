@@ -54,5 +54,5 @@ C++11标准的简易高性能webServer
 * 压力测试开启1000个进程，访问服务器60s，过程是客户端发出请求，然后服务器读取并解析，返回响应报文，客户端读取。
 长连接因为不必频繁的创建新套接字去请求，然后发送数据读取数据，关闭套接字等操作，所以比短连接QPS高很多。
 
-HTTP长连接 QPS: 26万
-    server/WebServer2/resource/WebServer长连接QPS.png
+HTTP短连接 QPS: 26万
+   WebServer2/resource/WebServer短连接QPS.png
